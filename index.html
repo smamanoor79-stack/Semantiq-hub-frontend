@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic hub</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom CSS (loaded after Bootstrap to override) -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar with Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/semantiqhublogo.png" alt="SemantiQhub Logo" class="logo-img" />
+                </a>
+                
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Nav Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Use Cases
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Use Case 1</a></li>
+                                <li><a class="dropdown-item" href="#">Use Case 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Developers
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Documentation</a></li>
+                                <li><a class="dropdown-item" href="#">API</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Generative AI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Learn
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                                <li><a class="dropdown-item" href="#">Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn demo-btn ms-lg-2" href="#">Get A Free Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Bootstrap Grid -->
+        <section class="hero">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <div class="hero-text">
+                            <h4 class="text-uppercase mb-3">THE MOST TRUSTED AI SERVICES PROVIDERS</h4>
+                            <h1 class="display-3 fw-bold mb-4">Bringing Meaning To <br>Your Data</h1>
+                            <p class="lead mb-4">From governance to discovery, SemantiQhub empowers teams to trust, manage, and talk with their data like never before</p>
+                            <a class="btn demo-btn1 mb-4" href="#">Get A Free Demo</a>
+                            
+                            <div class="partners d-flex flex-wrap gap-3 align-items-center">
+                                <img src="assets/googlecloudpartner.png" alt="Google Cloud Partner" class="img-fluid" />
+                                <img src="assets/azurecloudpartner.png" alt="Azure Cloud Partner" class="img-fluid" />
+                                <img src="assets/aws.png" alt="AWS Cloud Partner" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="hero-image">
+                            <img src="assets/ai-illustrations.png" alt="AI Illustration" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Methodology Section -->
+    <section class="methodology py-5">
+        <div class="container-fluid px-lg-5">
+            <!-- Method Header -->
+            <div class="row align-items-center mb-5 g-5">
+                <div class="col-lg-6">
+                    <div class="method-text">
+                        <h2 class="display-5 fw-medium mb-4">Our Method</h2>
+                        <p class="lead">We combine advanced AI technologies with real-world insight to deliver intelligent, scalable solutions. By identifying core needs and applying the right mix of automation and machine learning, we create systems that drive efficiency and meaningful outcomes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="method-visual">
+                        <img src="assets/ourmethod.png" alt="AI Network Illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method Cards -->
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="method-card">
+                        <div class="icon-box mb-3">
+                            <img src="assets/searchicon.png" alt="Discover">
+                        </div>
+                        <h3 class="h4 fw-medium mb-3">Discover</h3>
+                        <p>We automatically surface hidden context by uncovering patterns often missed in complex data. This reveals deeper insights that lead to smarter, faster decisions.</p>
+                        <a href="#" class="view-more">View Full Page ↗</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="method-card">
+                        <div class="icon-box mb-3">
+                            <img src="assets/governicon.png" alt="Govern">
+                        </div>
+                        <h3 class="h4 fw-medium mb-3">Govern</h3>
+                        <p>We apply custom policies to ensure data governance, compliance, and consistency. By mapping information to structured ontologies, we create a unified understanding.</p>
+                        <a href="#" class="view-more">View Full Page ↗</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="method-card">
+                        <div class="icon-box mb-3">
+                            <img src="assets/talkicon.png" alt="Talk">
+                        </div>
+                        <h3 class="h4 fw-medium mb-3">Talk</h3>
+                        <p>Ask natural language questions and get instant, accurate answers in real-time. Our AI understands context, nuance, and intent—just like a human would.</p>
+                        <a href="#" class="view-more">View Full Page ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Made for Humans Section -->
+    <section class="made-for-humans py-5">
+        <div class="container-fluid px-lg-5">
+            <!-- Section Header -->
+            <div class="row mb-5 align-items-start">
+                <div class="col-lg-8">
+                    <div class="header-content">
+                        <h2 class="display-5 fw-medium mb-3">Made For Humans Powered By AI</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="btn demo-btn" href="#">Get A Free Demo</a>
+                </div>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card feature-card border-0 h-100">
+                        <img src="assets/humans1.png" class="card-img-top" alt="Semantic Understanding">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Semantic Understanding</h3>
+                            <p class="card-text">We connect data using ontologies and industry terms, so it makes sense to your team.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card feature-card border-0 h-100">
+                        <img src="assets/humans2.png" class="card-img-top" alt="Built on Knowledge Graphs">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Built on Knowledge Graphs</h3>
+                            <p class="card-text">Your data is connected for faster, smarter discovery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card feature-card border-0 h-100">
+                        <img src="assets/humans3.png" class="card-img-top" alt="Talk to Your Data">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Talk to Your Data</h3>
+                            <p class="card-text">Query in plain English, get powerful results—no code needed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card feature-card border-0 h-100">
+                        <img src="assets/humans4.png" class="card-img-top" alt="Designed for People">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Designed for People, Not Just Machines</h3>
+                            <p class="card-text">Built for everyone, not just the tech team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Problems We Solve -->
+    <section class="problems-solve py-5">
+        <div class="container-fluid px-lg-5">
+            <div class="problems-header mb-5">
+                <h2 class="display-5 fw-medium">What Problems We Solve</h2>
+                <p class="text-muted">See who we are</p>
+            </div>
+
+            <div class="row g-0 problems-container">
+                <div class="col-lg-6">
+                    <div class="problem-box process-blocks h-100">
+                        <h3 class="h4 fw-medium mb-4">Process Blocks</h3>
+                        <ul class="list-unstyled">
+                            <li class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-square flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1">Data Overload</strong>
+                                    <p class="mb-0">Too much data, not enough clarity, scattered, disconnected, and hard to interpret.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-square flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1">Lost Time</strong>
+                                    <p class="mb-0">Teams waste hours searching for files or repeating work that already exists.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-square flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1">Duplicate Effort</strong>
+                                    <p class="mb-0">Lack of visibility leads to rework and inefficiency across departments.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="problem-box access-gaps h-100">
+                        <h3 class="h4 fw-medium mb-4 common">Access Gaps</h3>
+                        <ul class="list-unstyled">
+                            <li class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-square bluechecks flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1 common">No Common Language</strong>
+                                    <p class="mb-0">Without shared definitions, data is misinterpreted and misused.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-square bluechecks flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1 common">Slow Insight</strong>
+                                    <p class="mb-0">Getting answers depends heavily on technical experts and long turnaround times.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="fas fa-check-square bluechecks flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <strong class="d-block mb-1 common">Limited Access</strong>
+                                    <p class="mb-0">Non-technical users are locked out of self-service discovery and decision-making.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="blog-section py-5">
+        <div class="container-fluid px-lg-5">
+            <!-- Blog Header -->
+            <div class="row mb-5 align-items-start">
+                <div class="col-lg-8">
+                    <div class="blog-title-group">
+                        <h2 class="display-5 fw-medium mb-3">Our Blogs</h2>
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn view-all-btn">View All</a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="row g-4">
+                <!-- Featured Blog -->
+                <div class="col-lg-7">
+                    <div class="blog-card featured">
+                        <div class="image-wrapper mb-3">
+                            <img src="Assets/blogs1.png" alt="Office" class="img-fluid rounded">
+                        </div>
+                        <div class="blog-content">
+                            <span class="meta d-block mb-2">Olivia Rhye • 20 Jan 2022</span>
+                            <h3 class="h4 mb-3">Loream Ipsum <span class="arrow">↗</span></h3>
+                            <p class="mb-3">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Blogs -->
+                <div class="col-lg-5">
+                    <div class="blog-side-column">
+                        <!-- Blog 2 -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-5">
+                                <img src="Assets/blogs2.png" alt="Computer" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="blog-content">
+                                    <span class="meta d-block mb-2">Phoenix Baker • 19 Jan 2022</span>
+                                    <h3 class="h6 mb-2">Loream Ipsum</h3>
+                                    <p class="small mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                                    <a href="#" class="read-more small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog 3 -->
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <img src="Assets/blogs3.png" alt="Monitor" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="blog-content">
+                                    <span class="meta d-block mb-2">Lana Steiner • 18 Jan 2022</span>
+                                    <h3 class="h6 mb-2">Loream Ipsum</h3>
+                                    <p class="small mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                                    <a href="#" class="read-more small">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer py-5">
+        <div class="container-fluid px-lg-5">
+            <!-- Footer Top -->
+            <div class="row align-items-center py-4 border-bottom border-secondary border-opacity-25">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-logo">
+                        <img src="assets/semantiqhublogo.png" alt="Semantiqhub Logo" class="img-fluid" 
+                             style="filter: brightness(0) invert(1); max-width: 188px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <ul class="nav justify-content-lg-center footer-links flex-wrap">
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Method</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Process</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Who We Are</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Blogs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-socials d-flex gap-3 justify-content-lg-end">
+                        <a href="#"><img src="assets/twitter.png" alt="Twitter" class="img-fluid"></a>
+                        <a href="#"><img src="assets/instagram.png" alt="Instagram" class="img-fluid"></a>
+                        <a href="#"><img src="assets/github.png" alt="GitHub" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row align-items-center pt-4">
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <p class="text-white mb-0 small">Copyright © 2025 Semantiqhub - All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="legal-links d-flex gap-4 justify-content-lg-end flex-wrap">
+                        <a href="#" class="text-white text-decoration-none small">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none small">Method</a>
+                        <a href="#" class="text-white text-decoration-none small">Process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
