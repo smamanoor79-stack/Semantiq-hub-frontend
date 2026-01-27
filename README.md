@@ -51,10 +51,8 @@ The custom CSS (`style.css`) overrides Bootstrap defaults to maintain the origin
 ## 📁 File Structure
 
 ```
-semantichub-website/
-├── index.html          # Main HTML file with Bootstrap integration
-├── style.css           # Custom CSS (loads after Bootstrap)
-├── assets/             # Images and logos
+semantiqhub-website/
+├── assets/           # Images and logos
 │   ├── semantiqhublogo.png
 │   ├── ai-illustrations.png
 │   ├── ourmethod.png
@@ -69,6 +67,8 @@ semantichub-website/
 │   ├── twitter.png
 │   ├── instagram.png
 │   └── github.png
+├── index.html          # Main HTML file with Bootstrap integration
+├── style.css           # Custom CSS (loads after Bootstrap)
 └── README.md
 ```
 
