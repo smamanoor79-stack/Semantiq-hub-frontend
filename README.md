@@ -1,6 +1,15 @@
 # SemantiQHub.ai Website
 
+From Design to Reality :
+This project was developed by translating a high-fidelity Figma design into clean, responsive HTML/CSS using Bootstrap 5
 A modern, responsive website for SemantiQHub - an AI services provider, built with Bootstrap 5 and custom CSS.
+
+
+📸 A visual representation of the Semantiqhub Landing Page.
+
+
+![desktop-semantiqhub](https://github.com/user-attachments/assets/4a8703b7-1908-4098-8059-2c7f4f933b9d)
+
 
 ## 🚀 Features
 
@@ -70,27 +79,7 @@ semantiqhub-website/
 ├── index.html          # Main HTML file with Bootstrap integration
 ├── style.css           # Custom CSS (loads after Bootstrap)
 └── README.md
-```
 
-## 🔧 Installation & Setup
-
-### Option 1: Direct Use
-1. Clone or download the repository
-2. Open `index.html` in a web browser
-3. All Bootstrap and Font Awesome resources load via CDN
-
-### Option 2: Local Development
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/semantichub-website.git
-
-# Navigate to the project directory
-cd semantichub-website
-
-# Open in your preferred code editor
-code .
-
-# Open index.html with Live Server or similar tool
 ```
 
 ## 🌐 CDN Links Used
@@ -131,37 +120,6 @@ The website is fully responsive with the following breakpoints:
 - **Footer Background**: #000a12
 - **White**: #FFFFFF
 
-## 🚀 Deployment to GitHub
-
-### Step 1: Initialize Git Repository
-```bash
-git init
-git add .
-git commit -m "Initial commit - Bootstrap integrated website"
-```
-
-### Step 2: Create GitHub Repository
-1. Go to GitHub.com
-2. Click "New Repository"
-3. Name it: `semantichub-website`
-4. Don't initialize with README (we already have one)
-5. Click "Create Repository"
-
-### Step 3: Push to GitHub
-```bash
-git remote add origin https://github.com/yourusername/semantichub-website.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 4: Enable GitHub Pages (Optional)
-1. Go to repository Settings
-2. Navigate to "Pages" section
-3. Select source: "Deploy from branch"
-4. Select branch: `main` and folder: `/ (root)`
-5. Click Save
-6. Your site will be live at: `https://yourusername.github.io/semantichub-website/`
-
 ## 🔄 Future Enhancements
 
 - [ ] Add smooth scroll behavior
@@ -191,20 +149,12 @@ git push -u origin main
 
 ## 📄 License
 
-Copyright © 2025 Semantiqhub - All Rights Reserved.
+This project is for portfolio purposes. The code is open for educational use, but the design rights belong to the original creator.
 
 ## 🤝 Contributing
 
-If you'd like to contribute to this project:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+"This is a personal portfolio project. 
+While I am not currently looking for contributions, feel free to 
+fork the repository to explore the code or use it as a reference for your own learning."
 
-## 📧 Contact
-
-For questions or support, please contact the SemantiQHub team.
-
----
 
