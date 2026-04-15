@@ -1,4 +1,4 @@
-# SemantiQHub.ai Website
+# SemantiQHub.Website
 
 From Design to Reality :
 This project was developed by translating a high-fidelity Figma design into clean, responsive HTML/CSS using Bootstrap 5
