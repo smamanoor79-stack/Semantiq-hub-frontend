@@ -773,3 +773,25 @@ body {
         padding: 20px 15px;
     }
 }
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .demo-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
