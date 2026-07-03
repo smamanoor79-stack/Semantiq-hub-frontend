@@ -3,95 +3,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    /* Prevents horizontal scrolling */
 }
 
-/* --- NAVBAR CUSTOMIZATION --- */
+/* --- NAVBAR --- */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
     height: 76px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding: 0 144px;
 }
 
-.navbar .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
-}
-
-.logo-img {
+.logo img {
     width: 188px;
     height: auto;
 }
 
-.navbar-nav {
+.nav-links {
+    list-style: none;
+    display: flex;
     gap: 25px;
+    align-items: center;
 }
 
-.nav-link {
-    color: #333 !important;
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
     font-weight: 500;
-    font-size: 14px;
-    padding: 0.5rem 0 !important;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
 }
 
-.nav-link:hover {
-    color: #0A6190 !important;
-}
-
-.dropdown-toggle::after {
+.arrow {
     font-size: 0.7rem;
     margin-left: 4px;
 }
 
+.nav-links i {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
 .demo-btn {
-    background-color: #0A6190 !important;
+    background-color: #0A6190;
     color: white !important;
     border-radius: 5px;
     font-weight: bold;
-    padding: 12px 29px !important;
+    padding: 12px 29px;
     text-decoration: none;
     display: inline-block;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.demo-btn:hover {
-    background-color: #084d73 !important;
 }
 
 /* --- HERO SECTION --- */
 .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 144px;
     background-color: #E7FAFB;
-    padding: 80px 0;
+    gap: 40px;
 }
 
-.hero .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.hero-text {
+    max-width: 559px;
 }
 
 .hero-text h4 {
     color: #1A1B1D;
     font-size: 14px;
     letter-spacing: 1px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .hero-text h1 {
     font-size: 3.5rem;
     line-height: 1.1;
+    margin-bottom: 20px;
     color: #1a1a1a;
 }
 
 .hero-text p {
     font-size: 1.1rem;
+    margin-bottom: 30px;
     color: #555;
     line-height: 1.6;
 }
@@ -104,19 +114,29 @@ body {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
 }
 
-.demo-btn1:hover {
-    background-color: #084d73;
+.partners {
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
 .partners img {
+    /* Exact dimensions from Figma */
     width: 162px;
     height: 54px;
+
+    /* Important for scaling without distortion */
     object-fit: contain;
+
+    /* Corner roundness from Figma */
     border-radius: 4px;
+
+    /* Border from Figma (1px solid with 10% opacity black) */
     border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .hero-image img {
@@ -124,25 +144,33 @@ body {
     height: auto;
 }
 
+
 /* --- METHODOLOGY SECTION --- */
 .methodology {
+    padding: 100px 144px;
     background-color: #ffffff;
 }
 
-.methodology .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.method-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
 }
 
 .method-text h2 {
     font-size: 40px;
+    font-style: medium;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .method-text p {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
+    max-width: 600px;
 }
 
 .method-visual img {
@@ -150,15 +178,25 @@ body {
     height: auto;
 }
 
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
 .icon-box img {
     width: 48px;
     height: 48px;
+    margin-bottom: 20px;
 }
 
 .method-card h3 {
     font-size: 24px;
+    margin-bottom: 15px;
+    font-style: medium;
     font-weight: 500;
 }
+
 
 .method-card p {
     font-size: 15px;
@@ -173,23 +211,29 @@ body {
     font-weight: 600;
 }
 
-.view-more:hover {
-    color: #006666;
-}
-
 /* --- MADE FOR HUMANS --- */
 .made-for-humans {
+    padding: 100px 144px;
     background-color: #E7FAFB;
+    ;
 }
 
-.made-for-humans .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
 }
 
 .header-content h2 {
     font-size: 36px;
-    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .feature-card {
@@ -197,12 +241,6 @@ body {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card img {
@@ -211,24 +249,13 @@ body {
     object-fit: cover;
 }
 
-.feature-card .card-body {
+.card-content {
     padding: 24px;
 }
 
-.feature-card .card-title {
-    font-weight: 500;
-    margin-bottom: 12px;
-}
-
-.feature-card .card-text {
-    color: #666;
-    font-size: 15px;
-}
-
 /* --- PROBLEMS SOLVE --- */
-.problems-solve .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.problems-solve {
+    padding: 100px 144px;
 }
 
 .problems-header h2 {
@@ -241,7 +268,9 @@ body {
     font-weight: 400;
 }
 
+
 .problems-container {
+    display: flex;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -249,12 +278,27 @@ body {
 }
 
 .problem-box {
+    flex: 1;
     padding: 60px;
 }
 
-.problem-box h3 {
+/* Targeting Process Blocks specifically */
+.problem-box.process-blocks h3 {
     font-size: 28px;
     font-weight: 500;
+}
+
+/* Targeting Access Gaps specifically */
+.problem-box.access-gaps h3.common {
+    font-size: 28px;
+    /* Keep consistent with the other box */
+    font-weight: 500;
+}
+
+/* Target only checkmarks inside Access Gaps */
+.access-gaps .bluechecks {
+    color: #0A6191;
+    /* or any blue shade you prefer */
 }
 
 .process-blocks {
@@ -269,39 +313,57 @@ body {
     color: #0A6191;
 }
 
-.bluechecks {
-    color: #0A6191;
+.problem-box li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
-.problem-box li i {
-    font-size: 1.2rem;
-}
-
-.problem-box li strong {
-    font-size: 16px;
-}
-
-.problem-box li p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
-}
-
-/* --- BLOGS SECTION --- */
+/* Blogs */
 .blog-section {
+    padding: 80px 144px;
+    /* Matches your side padding */
     background-color: #E7FAFB;
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
+    /* Light background from Figma */
+    font-family: 'Public Sans', sans-serif
 }
 
-.blog-section .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.meta {
+    font-family: Public Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.read-more {
+    color: #0A6191;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: underline !important;
+    /* This adds the underline from your Figma design */
+    text-underline-offset: 4px;
+    /* Optional: adds a little space between text and line */
+}
+
+/* HEADER ALIGNMENT: Puts Title and Button on one line */
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes button to the far right */
+    align-items: flex-start;
+    /* Aligns items to the top */
+    margin-bottom: 40px;
+    color: #1A1B1D;
 }
 
 .blog-title-group h2 {
     font-size: 32px;
     color: #1A1B1D;
-    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .blog-title-group p {
@@ -311,487 +373,884 @@ body {
 
 .view-all-btn {
     background-color: #0A6190;
-    color: white !important;
+    /* Figma Blue */
+    color: white;
     padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    display: inline-block;
-    transition: background-color 0.3s ease;
 }
 
-.view-all-btn:hover {
-    background-color: #084d73;
+/* GRID SYSTEM */
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    /* Left side wider than right */
+    gap: 32px;
 }
 
-.blog-card img {
+.blog-side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* CARD STYLING */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card.small {
+    flex-direction: row;
+    /* Image and text side-by-side */
+    gap: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
     border-radius: 12px;
     object-fit: cover;
 }
 
-.blog-card.featured .image-wrapper img {
-    width: 100%;
-    height: auto;
+.blog-card.small img {
+    width: 240px;
+    /* Specific width for side images */
+    height: 160px;
+    border-radius: 12px;
+}
+
+/* TEXT STYLING */
+.blog-content {
+    padding-top: 16px;
+}
+
+.blog-card.small .blog-content {
+    padding-top: 0;
 }
 
 .meta {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 600;
     font-size: 14px;
     color: #1A1B1D;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .blog-content h3 {
     font-size: 20px;
     color: #1A1B1D;
-    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .blog-content p {
     color: #1A1B1D;
     font-size: 14px;
     line-height: 1.5;
-}
-
-.arrow {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover .arrow {
-    transform: translate(3px, -3px);
+    margin-bottom: 12px;
 }
 
 .read-more {
-    color: #0A6191;
-    font-weight: 600;
+    color: #0A6190;
+    text-decoration: none;
+    font-weight: 700;
     font-size: 14px;
-    text-decoration: underline !important;
-    text-underline-offset: 4px;
-    transition: color 0.3s ease;
-}
-
-.read-more:hover {
-    color: #084d73;
 }
 
 /* --- FOOTER SECTION --- */
 .main-footer {
     background-color: #000a12;
     color: white;
+    padding: 60px 144px 30px;
+    width: 100%;
 }
 
-.main-footer .container-fluid {
-    padding-left: 144px !important;
-    padding-right: 144px !important;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+    /* figma spacing  */
+    margin-bottom: 32px;
 }
 
-.footer-links .nav-link {
-    color: #FFFFFF !important;
-    opacity: 0.8;
+.footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
     font-size: 16px;
+    opacity: 0.8;
     font-weight: 400;
-    padding: 0.5rem 1rem !important;
+    line-height: 24px;
+    font-family: 'Public Sans', sans-serif;
 }
 
-.footer-links .nav-link:hover {
-    opacity: 1;
-    color: #FFFFFF !important;
+/* --- FOOTER SOCIALS: EXACT FIGMA SIZE --- */
+.footer-socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 .footer-socials a {
     width: 28px;
+    /* Exact width from Figma Properties */
     height: 28px;
+    /* Exact height from Figma Properties */
     display: block;
-    transition: opacity 0.3s ease;
 }
 
-.footer-socials a:hover {
-    opacity: 0.8;
-}
-
-.footer-socials img {
+.footer-socials a img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+/* --- FOOTER BOTTOM: ALIGNMENT FIX --- */
 .footer-bottom {
-    border-top: 2px solid rgba(255, 255, 255, 0.1) !important;
+    display: flex;
+    justify-content: space-between;
+    /* This pushes links to the far right */
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 40px;
+    /* Space between the two navy sections */
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.legal-links {
+    display: flex;
+    gap: 40px;
+    /* Spacing between Privacy Policy, Method, and Process */
 }
 
 .legal-links a {
     color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
     opacity: 0.8;
-    transition: opacity 0.3s ease;
 }
 
 .legal-links a:hover {
     opacity: 1;
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 
-/* --- RESPONSIVE ADJUSTMENTS --- */
+
+
+
+
+/* Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* LARGE DESKTOP - 1920px and above */
 @media screen and (min-width: 1920px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 200px !important;
-        padding-right: 200px !important;
+    .navbar {
+        padding: 0 200px;
+    }
+    
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section,
+    .main-footer {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
 
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section,
+    .main-footer {
+        padding-left: 144px;
+        padding-right: 144px;
+    }
+
 /* DESKTOP MEDIUM - 1200px to 1439px */
 @media screen and (max-width: 1439px) and (min-width: 1200px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 100px !important;
-        padding-right: 100px !important;
+    .navbar {
+        padding: 0 100px;
     }
     
-    .navbar-nav {
+    .nav-links {
         gap: 22px;
+    }
+    
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section,
+    .main-footer {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
 /* DESKTOP SMALL - 1024px to 1199px */
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 80px !important;
-        padding-right: 80px !important;
+    .navbar {
+        padding: 0 80px;
     }
     
-    .navbar-nav {
+    .nav-links {
         gap: 18px;
     }
     
-    .nav-link {
-        font-size: 13.5px !important;
+    .nav-links li a {
+        font: size 13.5px;
     }
     
     .demo-btn {
-        padding: 11px 24px !important;
-        font-size: 13.5px !important;
+        padding: 11px 24px;
+        font-size: 13.5px;
+    }
+    
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section,
+    .main-footer {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 }
 
-/* TABLET - 992px and below (Bootstrap lg breakpoint) */
-@media screen and (max-width: 991px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 60px !important;
-        padding-right: 60px !important;
+/* TABLET LANDSCAPE - 1024px and below */
+@media screen and (max-width: 1024px) {
+    /* Reduce overall padding.
+       Height was fixed at 76px, but nav-link text wraps to two
+       lines at this width and was getting clipped/overlapping the
+       hero below — switch to auto height with vertical padding so
+       the navbar grows to fit wrapped text. */
+    .navbar {
+        padding: 12px 60px;
+        height: auto;
+        min-height: 76px;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
     
-    .logo-img {
+    .logo img {
         width: 170px;
     }
     
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section,
+    .main-footer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* Navbar adjustments */
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .demo-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    /* Hero section - stack vertically starting at tablet width
+       so hero-text isn't squeezed into a narrow column */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px;
+        gap: 40px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
     .hero-text h1 {
         font-size: 2.8rem;
     }
-    
+
+    /* Manual <br> tags in the heading/paragraph were written for
+       desktop line breaks; they cause awkward wraps (e.g. "To"
+       stranded alone) once the column narrows, so hide them and
+       let the text wrap naturally */
+    .hero-text h1 br,
+    .hero-text p br {
+        display: none;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
     .hero-image img {
         max-width: 450px;
     }
-    
+
+    .partners {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Method grid - 2 columns */
+    .method-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    /* Feature grid - 2 columns */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Problems container */
     .problem-box {
         padding: 40px;
     }
-    
-    /* Make navbar items stack properly */
-    .navbar-nav {
-        margin-top: 1rem;
-        gap: 0;
+
+    /* Blog grid adjustments */
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .blog-side-column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/* TABLET LANDSCAPE NARROW - 900px to 1023px (FIXES 941px ISSUE) */
+@media screen and (max-width: 1023px) and (min-width: 900px) {
+    .navbar {
+        padding: 0 60px;
     }
     
-    .nav-item {
-        margin-bottom: 0.5rem;
+    .logo img {
+        width: 170px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links li a {
+        font-size: 13px;
     }
     
     .demo-btn {
-        margin-top: 1rem;
-        display: block;
-        text-align: center;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .main-footer {
+        padding: 60px 60px 30px;
+    }
+    
+    .footer-links {
+        gap: 30px;
+    }
+    
+    .footer-links a {
+        font-size: 15px;
     }
 }
 
 /* TABLET PORTRAIT - 768px and below */
 @media screen and (max-width: 768px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+    /* Further reduce padding */
+    .navbar {
+        padding: 15px 30px;
+        height: auto;
     }
     
-    .logo-img {
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .main-footer {
+        padding: 40px 30px 20px;
+    }
+
+    /* Navbar - hide menu items on tablet/mobile */
+    .logo img {
         width: 150px;
     }
-    
+
+    .nav-links {
+        display: none; /* Hide on mobile - implement hamburger menu for production */
+    }
+
+    /* Hero section - stack vertically */
     .hero {
-        padding: 50px 0;
-    }
-    
-    .hero-text {
+        flex-direction: column;
+        padding: 50px 30px;
         text-align: center;
+        gap: 30px;
     }
-    
+
+    .hero-text {
+        max-width: 100%;
+    }
+
     .hero-text h1 {
         font-size: 2.2rem;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
+        line-height: 1.5;
     }
-    
-    .hero-image img {
-        max-width: 400px;
-    }
-    
-    .partners {
+
+    .hero-image {
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
-    
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .partners {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     .partners img {
         width: 140px;
         height: 46px;
     }
-    
+
+    /* Method section */
+    .methodology {
+        padding: 60px 30px;
+    }
+
+    .method-header {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
     .method-text h2 {
         font-size: 32px;
     }
-    
+
     .method-text p {
         font-size: 16px;
     }
-    
+
+    .method-visual img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .method-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Made for humans */
+    .made-for-humans {
+        padding: 60px 30px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
     .header-content h2 {
         font-size: 28px;
     }
-    
+
+    /* Problems section */
+    .problems-solve {
+        padding: 60px 30px;
+    }
+
+    .problems-container {
+        flex-direction: column;
+    }
+
     .problem-box {
         padding: 30px;
     }
-    
-    .blog-title-group h2 {
-        font-size: 28px;
+
+    /* Blog section */
+    .blog-section {
+        padding: 60px 30px;
     }
-    
+
+    .blog-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .blog-side-column {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card.small {
+        flex-direction: column;
+    }
+
+    .blog-card.small img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
     .footer-links {
-        justify-content: center !important;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
-    
+
     .footer-socials {
-        justify-content: center !important;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
 /* MOBILE - 480px and below */
 @media screen and (max-width: 480px) {
-    .navbar .container-fluid,
-    .hero .container-fluid,
-    .methodology .container-fluid,
-    .made-for-humans .container-fluid,
-    .problems-solve .container-fluid,
-    .blog-section .container-fluid,
-    .main-footer .container-fluid {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+    /* Minimal padding for mobile */
+    .navbar {
+        padding: 12px 20px;
     }
     
-    .logo-img {
+    .hero,
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .main-footer {
+        padding: 40px 20px 20px;
+    }
+
+    /* Navbar */
+    .logo img {
         width: 130px;
     }
-    
+
+    /* Hero */
     .hero {
-        padding: 30px 0;
+        padding: 30px 20px;
     }
-    
+
     .hero-text h4 {
         font-size: 11px;
+        letter-spacing: 0.5px;
     }
-    
+
     .hero-text h1 {
         font-size: 1.9rem;
         line-height: 1.2;
+        margin-bottom: 15px;
     }
-    
+
+    .hero-text h1 br {
+        display: none;
+    }
+
     .hero-text p {
         font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
     }
-    
+
+    .hero-text p br {
+        display: none;
+    }
+
     .demo-btn1 {
         padding: 14px 32px;
         font-size: 14px;
+        width: auto;
+        display: inline-block;
     }
-    
+
     .partners img {
         width: 130px;
         height: 43px;
     }
-    
+
     .hero-image img {
+        width: 100%;
         max-width: 320px;
     }
-    
+
+    /* Method section */
+    .methodology {
+        padding: 50px 20px;
+    }
+
     .method-text h2 {
         font-size: 26px;
+        margin-bottom: 15px;
     }
-    
+
     .method-text p {
         font-size: 15px;
+        line-height: 1.5;
     }
-    
+
+    .method-visual img {
+        width: 100%;
+        max-width: 320px;
+    }
+
     .method-card h3 {
         font-size: 20px;
+        margin-bottom: 12px;
     }
-    
+
     .method-card p {
         font-size: 14px;
+        line-height: 1.5;
     }
-    
+
+    /* Made for humans */
+    .made-for-humans {
+        padding: 50px 20px;
+    }
+
     .header-content h2 {
         font-size: 24px;
     }
-    
-    .feature-card .card-body {
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .card-content {
         padding: 16px;
     }
-    
-    .feature-card .card-title {
+
+    .card-content h3 {
         font-size: 17px;
+        margin-bottom: 8px;
     }
-    
-    .feature-card .card-text {
+
+    .card-content p {
         font-size: 13px;
+        line-height: 1.4;
     }
-    
+
+    /* Problems section */
+    .problems-solve {
+        padding: 50px 20px;
+    }
+
     .problems-header h2 {
         font-size: 24px;
+        margin-bottom: 8px;
     }
-    
+
+    .problems-header p {
+        font-size: 14px;
+    }
+
     .problem-box {
         padding: 25px 20px;
     }
-    
+
     .problem-box h3 {
         font-size: 20px;
     }
-    
+
+    .problem-box li {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .problem-box li i {
+        flex-shrink: 0;
+        margin-top: 3px;
+    }
+
     .problem-box li strong {
         font-size: 14px;
     }
-    
+
     .problem-box li p {
         font-size: 13px;
+        line-height: 1.4;
     }
-    
+
+    .problem-box li p br {
+        display: none;
+    }
+
+    /* Blog section */
+    .blog-section {
+        padding: 50px 20px;
+    }
+
     .blog-title-group h2 {
         font-size: 24px;
     }
-    
+
     .blog-title-group p {
         font-size: 14px;
+        line-height: 1.4;
     }
-    
+
+    .blog-title-group p br {
+        display: none;
+    }
+
     .view-all-btn {
         padding: 10px 18px;
         font-size: 13px;
     }
-    
+
     .blog-content h3 {
         font-size: 17px;
     }
-    
+
     .blog-content p {
         font-size: 13px;
+    }
+
+    .blog-content p br {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-logo img {
+        width: 140px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .legal-links a {
+        font-size: 12px;
     }
 }
 
 /* EXTRA SMALL MOBILE - 360px and below */
 @media screen and (max-width: 360px) {
-    .logo-img {
+    .logo img {
         width: 110px;
     }
-    
+
     .hero-text h1 {
         font-size: 1.6rem;
     }
-    
+
     .hero-text p {
         font-size: 0.9rem;
     }
-    
+
     .demo-btn1 {
         padding: 12px 26px;
         font-size: 13px;
     }
-    
+
     .partners img {
         width: 110px;
         height: 36px;
     }
-    
+
     .method-text h2,
     .problems-header h2,
     .blog-title-group h2 {
         font-size: 22px;
     }
-    
+
     .header-content h2 {
         font-size: 22px;
     }
-    
+
     .problem-box {
         padding: 20px 15px;
     }
 }
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: none !important;
+
+/* LANDSCAPE ORIENTATION FIX - for mobile devices */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 30px;
     }
 
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 20px;
+    .hero-text h1 {
+        font-size: 2rem;
     }
 
-    .nav-links li a {
-        font-size: 12px;
-    }
-
-    .demo-btn {
-        padding: 8px 14px;
-        font-size: 12px;
+    .methodology,
+    .made-for-humans,
+    .problems-solve,
+    .blog-section {
+        padding: 40px 30px;
     }
 }
